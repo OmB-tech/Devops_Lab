@@ -13,6 +13,11 @@ pipeline {
                 bat 'mvn clean package'
             }
         }
+        stage('Run Selenium Tests') {
+            steps {
+                bat 'mvn test'
+            }
+        }
 
     }
 }
